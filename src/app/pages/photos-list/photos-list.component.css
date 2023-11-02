@@ -1,0 +1,28 @@
+.search-container{
+    display: block;
+    width: 338px;
+    margin: 0px auto
+}
+
+.outer-container{
+    width: 100%;
+}
+
+.search-input{
+    width: 200px;
+    margin-right: 5px;
+    font-size: 32px;
+}
+
+.search-button{
+width: 125px;
+font-size: 32px;
+border-radius: 10px;
+}
+
+.validation-text{
+    color: red;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 10px;
+}

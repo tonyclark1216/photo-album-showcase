@@ -1,0 +1,6 @@
+
+<span class="photo-container" *ngIf="photo">
+    <img [src]="photo.thumbnailUrl">
+    <div class="photo-text">Photo ID: <br />{{photo.id}}</div>
+    <div class="photo-text">Title:  <br />{{photo.title}}</div>
+</span>

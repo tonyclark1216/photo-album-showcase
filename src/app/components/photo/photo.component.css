@@ -1,0 +1,18 @@
+.photo-container{
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: top;
+    /* border: 3px solid white; */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.photo-text{
+    color: white;
+    font-family: sans-serif;
+}
