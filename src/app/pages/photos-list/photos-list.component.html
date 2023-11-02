@@ -1,9 +1,9 @@
 
 <div class="outer-container">
     <div class="search-container">
-        <input class="search-input" placeholder="Album ID" [(ngModel)]="albumId" type="number" (keydown)="enterSubmit($event)">
-        <button class="search-button" (click)="getPhotoListById()">Search</button>
-        <h3 class="validation-text">{{validationText}}</h3>
+        <input id="search-input" class="search-input" placeholder="Album ID" [(ngModel)]="albumId" type="number" (keydown)="enterSubmit($event)">
+        <button id="search-button" class="search-button" (click)="getPhotoListById()">Search</button>
+        <h3 id="validation-text" class="validation-text">{{validationText}}</h3>
 </div>
 </div>
 
@@ -11,5 +11,5 @@
 
 
 <span *ngFor="let photo of photosList">
-    <photo [photo]="photo"></photo>
+    <photo [id]="'photo_' + photo.id" [photo]="photo"></photo>
 </span>
