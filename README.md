@@ -11,7 +11,7 @@ If not run `npm install -g @angular/cli@latest`
 
 Navigate to project folder in command line
 
-Intall packages with `npm install`
+Install packages with `npm install`
 
 To test: `ng test`
 
