@@ -1,6 +1,7 @@
 
 <span class="photo-container" *ngIf="photo">
-    <img [id]="'photo_' + photo.id + '_thumbnail'" [src]="photo.thumbnailUrl">
+    <!-- Replacing photo thumnail url as via.placeholder.com throws frequent 504 errors -->
+    <img [id]="'photo_' + photo.id + '_thumbnail'" [src]="photo.thumbnailUrl.replace('via.placeholder.com', 'placeholder.pics/svg')">
     <div [id]="'photo_' + photo.id + '_id'" class="photo-text">Photo ID: <br />{{photo.id}}</div>
     <div [id]="'photo_' + photo.id + '_title'" class="photo-text">Title:  <br />{{photo.title}}</div>
 </span>
